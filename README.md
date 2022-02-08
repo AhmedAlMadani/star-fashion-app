@@ -6,3 +6,5 @@ Project Description:
 4. Payment option.
 5. Localization in two different languages.
 6. User Authentication.
+
+Link to Trello board : https://trello.com/invite/b/NmtAPCjc/453e00f960068b62c7e827e35f8804f2/star-fashions-workflow

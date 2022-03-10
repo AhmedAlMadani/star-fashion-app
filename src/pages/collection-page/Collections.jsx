@@ -2,13 +2,15 @@ import React from "react";
 
 import COLLECTION_DATA from "./Collections.data";
 
+import Preview from "../../components/collections-preview/Preview";
+
 class CollectionPage extends React.Component {
     constructor(props){
         super(props);
 
         this.state = {
             collections : COLLECTION_DATA
-        }
+        };
         
     }
 
@@ -18,7 +20,7 @@ class CollectionPage extends React.Component {
             <div className="collection-page">
                 {
                     collections.map(({id, ...otherCollectionProps}) => (
-                        <div></div>
+                        <Preview key={id} {...otherCollectionProps} />
                     )) 
                 }
             </div>

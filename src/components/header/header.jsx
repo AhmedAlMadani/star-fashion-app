@@ -13,7 +13,7 @@ const Header = () => (
             <img className='logo' src={img} alt='logo' />
         </Link>
         <div className='options-right'>
-            <Link to='/collection' className='option'> SING IN </Link>
+            <Link to='/signin' className='option'> SING IN </Link>
             <Link to='/collection' className='option'> CART </Link>
         </div>
         

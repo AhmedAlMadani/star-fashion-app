@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    padding: 0px 40px;
   
     .logo-container {
       height: 100%;
@@ -17,11 +18,24 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-    
+        border: 2px;
+
         .option {
           padding: 10px 25px;
           font-size: 16px;
-          font-weight: 400;
+          font-weight: 600;
+          padding-bottom: 20px;
+
+          &:hover {
+            color: #5ECE7B;
+            font-weight: 900;
+            border-bottom: 2px solid #5ECE7B ;
+          }
+          &:active {
+            color: #5ECE7B;
+            font-weight:bolder;
+            border-bottom: 2px solid #5ECE7B ;
+          }
         }
       }
   
@@ -35,7 +49,19 @@
       .option {
         padding: 10px 25px;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 600;
+        padding-bottom: 20px;
+
+        &:hover {
+          color: #5ECE7B;
+          font-weight: 900;
+          border-bottom: 2px solid #5ECE7B ;
+        }
+        &:active {
+          color: #5ECE7B;
+          font-weight:bolder;
+          border-bottom: 2px solid #5ECE7B ;
+        }
       }
     }
   }

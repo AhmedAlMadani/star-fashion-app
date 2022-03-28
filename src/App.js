@@ -4,8 +4,7 @@ import './App.css';
 import Homepage from './pages/homepage/Homepage';
 import CollectionPage from './pages/collection-page/Collections';
 import Header from './components/header/header';
-import SignInSignUpPage from './pages/signin-signup-page/signin-signup';
-
+import Authentication from './components/authentication/authentication';
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       <Switch>
         <Route exact path='/' component = {Homepage}/>
         <Route exact path='/collection' component = {CollectionPage}/>
-        <Route exact path='/signin' component = {SignInSignUpPage}/>
+        <Route exact path='/signin' component = {Authentication}/>
       </Switch>
     </div>
   );

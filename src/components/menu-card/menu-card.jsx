@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 
 import './menu-card.styles.scss';
 
@@ -16,4 +15,4 @@ const MenuCard = ({imageUrl, linkUrl, title, size, history, match}) => {
     )
 };
 
-export default withRouter(MenuCard);
+export default MenuCard;

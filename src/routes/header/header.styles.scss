@@ -19,9 +19,10 @@
         align-items: center;
         justify-content: flex-start;
         border: 2px;
+        cursor: pointer;
 
         .option {
-          padding: 10px 25px;
+          padding: 10px 20px;
           font-size: 16px;
           font-weight: 600;
           padding-bottom: 20px;
@@ -31,7 +32,7 @@
             font-weight: 900;
             border-bottom: 2px solid #5ECE7B ;
           }
-          &:active {
+          &:focus {
             color: #5ECE7B;
             font-weight:bolder;
             border-bottom: 2px solid #5ECE7B ;
@@ -45,6 +46,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      cursor: pointer;
   
       .option {
         padding: 10px 25px;
@@ -57,7 +59,7 @@
           font-weight: 900;
           border-bottom: 2px solid #5ECE7B ;
         }
-        &:active {
+        &:focus {
           color: #5ECE7B;
           font-weight:bolder;
           border-bottom: 2px solid #5ECE7B ;

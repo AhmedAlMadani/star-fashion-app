@@ -1,6 +1,8 @@
 import React from "react";
 import './Item.styles.scss'
 
+import Button from "../button/button";
+
 const Item = ({id, name, imageUrl, price}) => (
     <div className="item">
         <div 

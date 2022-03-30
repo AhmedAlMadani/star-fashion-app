@@ -1,23 +1,26 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import './App.css';
-import Homepage from './pages/homepage/Homepage';
-import CollectionPage from './pages/collection-page/Collections';
-import Header from './components/header/header';
-import Authentication from './components/authentication/authentication';
+import './App.scss'
 
-function App() {
-  return (
-    
-    <div>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component = {Homepage}/>
-        <Route exact path='/collection' component = {CollectionPage}/>
-        <Route exact path='/signin' component = {Authentication}/>
-      </Switch>
-    </div>
-  );
+import { Routes, Route } from 'react-router-dom';
+import Home from './routes/home/home';
+import Authentication from './components/authentication/authentication';
+import Header from './routes/header/header';
+import Collections from './routes/collection/collection-page';
+
+
+const App = () => {
+
+    return (
+      <Routes>
+        <Route path='/' element = {<Header />}>
+          <Route index element = {<Home />}/>
+          <Route path='auth' element = {<Authentication />}/>
+          <Route path='collections' element = {<Collections />}/>
+        </Route>
+      </Routes>
+        
+    );
 }
+
+
 
 export default App;

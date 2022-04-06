@@ -86,15 +86,15 @@ export const CartProvider = ({children}) => {
 
     const addItemToCart = (productToAdd) => {
         setCartItems(addCartItem(cartItems,productToAdd));
-    }
+    };
 
     const removeItemFromCart = (productToRemove) => {
         setCartItems(removeCartItem(cartItems, productToRemove))
-    }
+    };
 
     const clearItemFromCart = (productToClear) => {
         setCartItems(clearCartItem(cartItems, productToClear));
-    }
+    };
 
 
     const value = {

@@ -2,11 +2,13 @@ import './checkout.styles.scss';
 
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
+import {useTranslation} from 'react-i18next';
 
 import CheckoutItem from '../../components/checkout-item/checkout-item';
 
 const CheckOut = () =>{
     const {cartItems, cartTotal} = useContext(CartContext);
+    const {t} = useTranslation();
 
 
 
@@ -14,19 +16,19 @@ const CheckOut = () =>{
         <div className='checkout-container'>
             <div className='checkout-header'>
                 <div className='header-block'>
-                    <span>Product</span>
+                    <span>{t('product')}</span>
                 </div>
                 <div className='header-block'>
-                    <span>Description</span>
+                    <span>{t('description')}</span>
                 </div>
                 <div className='header-block'>
-                    <span>Quantity</span>
+                    <span>{t('quantity')}</span>
                 </div>
                 <div className='header-block'>
-                    <span>Price</span>
+                    <span>{t('price')}</span>
                 </div>
                 <div className='header-block'>
-                    <span>Remove</span>
+                    <span>{t('remove')}</span>
                 </div>
             </div>
             
@@ -35,7 +37,7 @@ const CheckOut = () =>{
                     <CheckoutItem key={cartItem.id} cartItem={cartItem} />
                 );
             })}   
-            <span className='total'>Total: ${cartTotal}</span>  
+            <span className='total'>{t('total')}: ${cartTotal}</span>  
         </div>
     );
 };

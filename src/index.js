@@ -16,8 +16,8 @@ import App from './App';
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
+      <Suspense fallback={<div>Loading...</div>}>
         <LocaleProvider>
-          <Suspense fallback={<div>Loading...</div>}>
             <UserProvider>
               <CategoriesProvider>
                 <CartProvider>
@@ -25,8 +25,8 @@ ReactDOM.render(
                 </CartProvider>
               </CategoriesProvider>
             </UserProvider>
-          </Suspense>
         </LocaleProvider>
+      </Suspense>
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')

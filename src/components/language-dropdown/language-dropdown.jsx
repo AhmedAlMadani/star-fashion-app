@@ -2,6 +2,7 @@ import './language-dropdown.styles.scss';
 import { useContext } from 'react';
 import { LocaleContext } from '../../contexts/locale.context';
 import {useTranslation} from 'react-i18next';
+
 const LanguageDropdown = () => {
     const {isLanguageBarOpen, setisLanguageBarOpen} = useContext(LocaleContext);
     const {i18n} = useTranslation;

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/star-fashion-app/static/css/main.e1ef0aba.css",
+    "main.js": "/star-fashion-app/static/js/main.b5c6d3ce.js",
+    "index.html": "/star-fashion-app/index.html",
+    "static/media/getFetch.cjs": "/star-fashion-app/static/media/getFetch.c780682470504fffbd04.cjs",
+    "main.e1ef0aba.css.map": "/star-fashion-app/static/css/main.e1ef0aba.css.map",
+    "main.b5c6d3ce.js.map": "/star-fashion-app/static/js/main.b5c6d3ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1ef0aba.css",
+    "static/js/main.b5c6d3ce.js"
+  ]
+}

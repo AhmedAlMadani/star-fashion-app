@@ -1,8 +1,7 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 
-import { I18nextProvider } from 'react-i18next';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { UserProvider } from './contexts/user.context';
 import { CategoriesProvider } from './contexts/categories.context';
 import { CartProvider } from './contexts/cart.context';
@@ -16,7 +15,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
         <LocaleProvider>
           <Suspense fallback={<div>Loading...</div>}>
             <UserProvider>
@@ -28,7 +27,7 @@ ReactDOM.render(
             </UserProvider>
           </Suspense>
         </LocaleProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
